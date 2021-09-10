@@ -1,0 +1,51 @@
+version: "3"
+services:
+  api1:
+    image: blockchain_api_node1:latest
+    hostname: blockchain_api_node1
+    command: npm run node_1
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  api2:
+    image: blockchain_api_node2:latest
+    hostname: blockchain_api_node2
+    command: npm run node_2
+    ports:
+      - "3002:3002"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  api3:
+    image: blockchain_api_node3:latest
+    hostname: blockchain_api_node3
+    command: npm run node_3
+    ports:
+      - "3003:3003"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  api4:
+    image: blockchain_api_node4:latest
+    hostname: blockchain_api_node4
+    command: npm run node_4
+    ports:
+      - "3004:3004"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  api5:
+    image: blockchain_api_node5:latest
+    hostname: blockchain_api_node5
+    command: npm run node_5
+    ports:
+      - "3005:3005"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
